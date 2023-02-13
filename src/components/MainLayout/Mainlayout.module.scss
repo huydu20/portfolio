@@ -1,0 +1,10 @@
+.app {
+    background-color: var(--theme-color);
+}
+
+.container {
+    max-width: var(--page-max-width);
+    margin: auto;
+    // height: 100vh;
+    padding-top: var(--default-layout-nav-max-height);
+}

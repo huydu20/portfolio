@@ -1,0 +1,139 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - (var(--default-layout-nav-max-height)));
+    overflow: hidden;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form {
+    min-width: 50%;
+}
+
+.title {
+    h1 {
+        color: var(--white);
+    }
+    p {
+        font-size: 2.4rem;
+        max-width: 374px;
+        margin-top: 16px;
+        span {
+            font-weight: 600;
+            color: var(--green);
+        }
+    }
+}
+
+.form-inputs {
+    display: flex;
+    margin-top: 36px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        input {
+            height: 60px;
+            font-size: 1.6rem;
+            padding: 8px 16px;
+            font-family: var(--font-family);
+            color: var(--white);
+            border: 2px solid var(--gray45);
+            background-color: var(--gray75);
+            caret-color: var(--green);
+            outline: none;
+
+            &:focus {
+                border: 2px solid var(--green);
+            }
+        }
+
+        &:nth-child(2) {
+            margin-left: 16px;
+            flex: 1;
+        }
+    }
+
+    div:first-child {
+        width: 200px;
+    }
+
+    div:last-child {
+    }
+}
+
+.form-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 24px;
+
+    label {
+        color: var(--white);
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    textarea {
+        max-height: 160px;
+        font-size: 1.6rem;
+        padding: 16px 16px;
+        color: var(--white);
+        font-family: var(--font-family);
+        border: 2px solid var(--gray45);
+        background-color: var(--gray75);
+        caret-color: var(--green);
+        outline: none;
+        resize: vertical;
+
+        &:focus {
+            border: 2px solid var(--green);
+        }
+    }
+}
+
+.send-btn {
+    width: 180px;
+    height: 56px;
+    margin-top: 24px;
+    color: var(--white);
+    border-radius: 0;
+    border: 1px solid var(--green);
+    background-color: transparent;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        width: 48px;
+        height: 48px;
+        margin: 16px 0;
+
+        &:hover svg {
+            fill: var(--green);
+        }
+    }
+}

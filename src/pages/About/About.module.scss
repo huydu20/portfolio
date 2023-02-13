@@ -1,0 +1,280 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner {
+    // height: 2000px
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+
+    .wallpaper {
+        position: relative;
+        height: 240px;
+        overflow: hidden;
+        .img {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -30px;
+    left: 4%;
+    width: 240px;
+    height: 240px;
+    border: 8px solid var(--gray45);
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.body {
+    min-width: 880px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--green);
+}
+
+.title {
+}
+
+.full-name {
+    color: var(--white);
+}
+
+.status {
+    margin-top: 16px;
+
+    .status-icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 8px;
+    }
+
+    p {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.actions {
+    display: flex;
+    margin-right: 48px;
+}
+
+.links {
+    .link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        margin: 0 8px;
+
+        svg:hover {
+            fill: var(--green);
+        }
+    }
+}
+
+.text {
+    margin-top: 42px;
+    text-align: justify;
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: var(--page-max-width);
+}
+
+.heading {
+    position: relative;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 2px;
+        background-color: var(--green);
+    }
+}
+
+.infor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    .infor-item {
+        display: flex;
+        width: 50%;
+        margin: 16px 0;
+
+        span {
+            margin-right: 16px;
+            color: var(--white);
+            font-weight: 600;
+        }
+    }
+}
+
+// Skills
+
+.skill-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-left {
+    max-width: 258px;
+    h1 {
+        font-size: 3.2rem;
+        color: var(--white);
+    }
+
+    span {
+        color: var(--green);
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+.content-right {
+    margin-right: -16px;
+    div:nth-child(n + 2) {
+        margin-top: 32px;
+    }
+
+    div {
+        display: flex;
+
+        img {
+            margin-right: 16px;
+        }
+    }
+}
+
+// Personal
+
+.personal-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.personal-content {
+    margin-right: 120px;
+}
+
+.personal-item {
+    max-width: 328px;
+    margin-top: 60px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    h3 {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 8px;
+        color: var(--white);
+
+        .line {
+            position: absolute;
+            top: 100%;
+            left: 40px;
+            width: 90px;
+            height: 3px;
+            background-color: var(--green);
+        }
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+
+    span {
+        color: var(--green);
+        font-weight: 600;
+    }
+
+    p {
+        margin-left: 40px;
+    }
+}
+
+// Footer
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+
+    .footer-title {
+        max-width: 380px;
+        color: var(--white);
+        span {
+            color: var(--green);
+        }
+    }
+
+    .explore-btn {
+        width: 320px;
+        height: 90px;
+        font-size: 1.8rem;
+        border: none;
+        color: var(--white);
+        svg {
+            margin-left: 16px;
+            width: 26px;
+            height: 26px;
+        }
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+}

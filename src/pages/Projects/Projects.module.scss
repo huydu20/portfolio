@@ -1,0 +1,120 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - (var(--default-layout-nav-max-height)));
+    overflow: hidden;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+// Content
+
+.title {
+    max-width: 378px;
+
+    p {
+        margin-top: 32px;
+    }
+
+    h1 {
+        position: relative;
+        color: var(--white);
+        .line {
+            position: absolute;
+            top: 120%;
+            left: 0;
+            width: 120px;
+            height: 3px;
+            background-color: var(--green);
+        }
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.link-item {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 176px;
+        img {
+            width: 40px;
+            height: 40px;
+            margin-top: 8px;
+            margin-right: 16px;
+        }
+    }
+}
+
+// Slider
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-img {
+    display: flex;
+    align-items: center;
+    width: 685px;
+    height: 458px;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid var(--green);
+    img {
+        width: 100%;
+    }
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24px;
+
+    .dot-item {
+        width: 16px;
+        height: 16px;
+        margin: 0 16px;
+        border-radius: 50%;
+        background-color: var(--gray45);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.85;
+            background-color: var(--green);
+        }
+    }
+    .dot-item.active {
+        background-color: var(--green);
+    }
+}
+
+.prev-btn,
+.next-btn {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+
+    &:hover svg {
+        opacity: 0.85;
+        fill: var(--green);
+    }
+}
