@@ -52,7 +52,7 @@ function Projects() {
                             <h3>Link</h3>
                             <div>
                                 {projects[slideIndex].repos.map((repo, index) => (
-                                    <a href={repo.url} key={index}>
+                                    <a href={repo.url} key={index} target="_blank" rel="noopener noreferrer">
                                         <Image src={repo.img} alt="slide image" />
                                     </a>
                                 ))}
