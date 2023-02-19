@@ -10,7 +10,7 @@ const projects = [
         repos: [
             {
                 img: images.github,
-                url: 'https://github.com/huydu20/first-project',
+                url: 'https://huydu20.github.io/the-band-template/',
             },
         ],
         slideImg: images.theBand,
